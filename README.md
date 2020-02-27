@@ -21,3 +21,11 @@ Your primary role User Interface Developer: [x] You will build a multi-page mark
 Grading Rubric: https://www.notion.so/Web-Unit-1-9d72ca3e8a78480689e63938c7b9599f
 
 My Notes:
+
+Images by Unsplash.com
+Photo by Christine Siracusa on Unsplash
+Photo by Jemima Whyles on Unsplash
+Photo by Stella de Smit on Unsplash
+Photo by Stephanie McCabe on Unsplash
+Photo by SJ Baren on Unsplash
+Photo by SJ Baren on Unsplash
