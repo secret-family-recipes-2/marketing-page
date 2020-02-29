@@ -168,29 +168,40 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  /* max-width: 500px;
-    width: 100%; */
-  margin: 50px auto;
+.wrapper {
+  margin: 0;
 }
-nav {
-  margin-top: 10px;
-  margin-bottom: 0px;
+header {
+  background-color: #207561;
+  margin-top: 0;
+  padding: 0;
+}
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 1001px) {
   nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
   }
 }
 nav .main-logo {
   align-self: center;
   justify-content: center;
-  margin-top: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  nav .main-logo {
+    border-bottom: 2px solid #F6F7FB;
+  }
 }
 @media screen and (min-width: 1001px) {
   nav .main-logo {
@@ -216,33 +227,43 @@ nav a {
 nav a:hover {
   color: #154d40;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (max-width: 1000px) and (min-width: 501px) {
   nav a {
     display: flex;
     flex-direction: row;
+    background-color: #207561;
   }
 }
-nav div {
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d9699;
+}
+footer .foot-nav {
+  display: flex;
+  flex-direction: column wrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+footer .foot-nav a {
+  text-decoration: none;
+}
+footer .foot-nav .foot-logo {
+  align-self: center;
+  width: 50%;
+}
+main {
+  background-color: #eae7e0;
   display: flex;
   flex-direction: column;
 }
-nav div .register {
-  font-size: 1.5em;
-  align-self: center;
-  font-family: roboto;
-  font-weight: normal;
-  background-color: white;
-  color: #207561;
-  margin: 0 auto;
+main .hero button {
+  background-color: #cfd68b;
 }
-nav div button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2.5em;
-  cursor: pointer;
+section {
+  background-color: #F6F7FB;
+  display: flex;
+  flex-direction: column;
 }
