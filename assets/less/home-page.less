@@ -66,8 +66,7 @@ main {
 
         @media @desktop {
             display: flex;
-            background-position: center;
-            align-text: center;
+            background-position: left; 
             
             h2 {
                 color: orange;
@@ -84,12 +83,12 @@ main {
                 }
                 
                 .box {
-                    background-color:rgba(0, 0, 0, 0.5);
+                    background-color:rgba(7, 82, 105, 0.9);
                     padding: 5%;
                     border-radius: 12%;
-                    width: 80%;
-                    justify-content: center;
-                    align-self: center;
+                    width: 45%;
+                    justify-content: flex-end;
+                    align-self: flex-end;
                     
                 }
         }
@@ -106,6 +105,15 @@ main {
         text-decoration: none;
         font-size: 2em;
         margin-bottom: 10px;
+
+        @media @tablet {
+            width: 50%;
+        }
+
+        @media @desktop {
+            width: 20%;
+            align-self: center;
+        }
     }
 }
 

@@ -335,8 +335,7 @@ main .hero .box {
 @media screen and (min-width: 1001px) {
   main .hero {
     display: flex;
-    background-position: center;
-    align-text: center;
+    background-position: left;
   }
   main .hero h2 {
     color: orange;
@@ -350,12 +349,12 @@ main .hero .box {
     color: #eae7e0;
   }
   main .hero .box {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(7, 82, 105, 0.9);
     padding: 5%;
     border-radius: 12%;
-    width: 80%;
-    justify-content: center;
-    align-self: center;
+    width: 45%;
+    justify-content: flex-end;
+    align-self: flex-end;
   }
 }
 main button {
@@ -368,6 +367,17 @@ main button {
   text-decoration: none;
   font-size: 2em;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  main button {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1001px) {
+  main button {
+    width: 20%;
+    align-self: center;
+  }
 }
 section {
   background-color: #eae7e0;
