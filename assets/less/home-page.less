@@ -1,0 +1,138 @@
+
+
+main {
+    background-color: @cream;
+    display: flex;
+    flex-direction: column;
+    
+    .hero {
+        display: flex;
+        flex-direction: column;
+        
+        background-image: url("/img/asparagus-2169305_640.jpg");
+        background-repeat: no-repeat;
+        padding: 5%;
+        h2 {
+        color:@cream;
+        align-self: flex-start;
+        }
+        h3 {
+            color: @lemon;
+            align-self: flex-end;
+        }
+        p {
+            color: @cream;
+        }
+        
+        .box {
+            background-color:rgba(0, 0, 0, 0.5);
+            padding: 5%;
+            border-radius: 12%;
+             
+        }
+
+       
+    }
+    button {
+        background-color: @dark-green; 
+        font-weight: bold;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+}
+
+section {
+    background-color: @cream;
+    display: flex;
+    flex-direction: column;
+
+    .Search {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+        background-color: @ocean-blue;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+         
+       .small-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: @cream;
+            padding: 10%;
+             
+
+            h2 {
+                font-weight: bold;
+                color: @dark-blue-hover;
+           }
+        }
+
+    }
+
+    .favorite {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+        background-color: @green;;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+         
+       .small-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: @cream;
+            padding: 10%;
+             
+
+            h2 {
+                font-weight: bold;
+               color: @dark-green;
+                
+           }
+        }
+    }
+
+    .create {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0;
+        background-color: @lemon;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+         
+       .small-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: @cream;
+            padding: 10%;
+             
+
+            h2 {
+                font-weight: bold;
+               color: @dark-lemon;
+                
+           }
+        }
+
+    }
+}

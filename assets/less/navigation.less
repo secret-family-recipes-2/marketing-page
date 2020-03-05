@@ -1,0 +1,57 @@
+//Navigation CSS - 
+// Navigation is set to Mobile First, then Tablet, then Desktop. 
+header {
+    background-color: @dark-green;
+    margin-top: 0;
+    padding: 0;
+} // Header
+
+nav {
+
+    @media @tablet{
+    .navigation-position-row();
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    }
+
+    @media @desktop {
+    .navigation-position-row();
+    justify-content: space-around;
+    align-items: center;
+    } //Nav Media Desktop
+
+    .main-logo {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+         
+        @media @tablet{
+            border-bottom: 2px solid @cream;
+        }
+        @media @desktop {
+        width: 20%;
+        } // main logo desktop
+    } //main site logo
+
+    a {
+        .navigation-position-column();
+        .font-styling-nav();
+        margin: 0 auto;
+        border-bottom: 2px solid @cream;
+         
+        &:hover {
+            color: @dark-green-hover;
+        } //a tag hover
+        
+        @media @tablet{
+            .navigation-position-row();
+            background-color: @dark-green;
+            }//login a tag hidden in this view
+        }
+
+        @media @desktop{
+        
+        }// a tag desktop
+
+} //navigation tag
