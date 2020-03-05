@@ -14,8 +14,10 @@ main {
         padding: 5%;
 
         @media @tablet {
-           
-
+            display: flex;
+            background-position: center;
+            align-text: center;
+            
             h2 {
                 color: orange;
                 align-self: flex-start;
@@ -34,7 +36,10 @@ main {
                     background-color:rgba(0, 0, 0, 0.5);
                     padding: 5%;
                     border-radius: 12%;
-                     
+                    width: 80%;
+                    justify-content: center;
+                    align-self: center;
+                    
                 }
         }
 
@@ -59,10 +64,36 @@ main {
              
         }
 
-        @media @tablet {
-
+        @media @desktop {
+            display: flex;
+            background-position: center;
+            align-text: center;
+            
+            h2 {
+                color: orange;
+                align-self: flex-start;
+                }
+        
+                h3 {
+                    color: @lemon;
+                    align-self: flex-end;
+                }
+        
+                p {
+                    color: @cream;
+                }
+                
+                .box {
+                    background-color:rgba(0, 0, 0, 0.5);
+                    padding: 5%;
+                    border-radius: 12%;
+                    width: 80%;
+                    justify-content: center;
+                    align-self: center;
+                    
+                }
         }
-
+        
        
     }
     button {

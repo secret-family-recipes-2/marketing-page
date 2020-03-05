@@ -188,6 +188,7 @@ header {
     display: flex;
     align-content: flex-end;
     font-size: 1em;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -290,6 +291,11 @@ main .hero {
   padding: 5%;
 }
 @media screen and (max-width: 1000px) and (min-width: 501px) {
+  main .hero {
+    display: flex;
+    background-position: center;
+    align-text: center;
+  }
   main .hero h2 {
     color: orange;
     align-self: flex-start;
@@ -305,6 +311,9 @@ main .hero {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5%;
     border-radius: 12%;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
   }
 }
 main .hero h2 {
@@ -322,6 +331,32 @@ main .hero .box {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5%;
   border-radius: 12%;
+}
+@media screen and (min-width: 1001px) {
+  main .hero {
+    display: flex;
+    background-position: center;
+    align-text: center;
+  }
+  main .hero h2 {
+    color: orange;
+    align-self: flex-start;
+  }
+  main .hero h3 {
+    color: #fbc11a;
+    align-self: flex-end;
+  }
+  main .hero p {
+    color: #eae7e0;
+  }
+  main .hero .box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    border-radius: 12%;
+    width: 80%;
+    justify-content: center;
+    align-self: center;
+  }
 }
 main button {
   background-color: #207561;
