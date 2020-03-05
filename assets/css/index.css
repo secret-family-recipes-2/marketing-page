@@ -278,6 +278,16 @@ footer .foot-nav .foot-logo {
   align-self: center;
   width: 50%;
 }
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  footer .foot-nav .foot-logo {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  footer .foot-nav .foot-logo {
+    width: 300px;
+  }
+}
 main {
   background-color: #eae7e0;
   display: flex;
@@ -286,6 +296,7 @@ main {
 main .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: url("/img/asparagus-2169305_640.jpg");
   background-repeat: no-repeat;
   padding: 5%;
@@ -294,7 +305,7 @@ main .hero {
   main .hero {
     display: flex;
     background-position: center;
-    align-text: center;
+    margin: 2%;
   }
   main .hero h2 {
     color: orange;
@@ -331,11 +342,13 @@ main .hero .box {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5%;
   border-radius: 12%;
+  width: 74%;
 }
 @media screen and (min-width: 1001px) {
   main .hero {
     display: flex;
     background-position: left;
+    margin: 2%;
   }
   main .hero h2 {
     color: orange;
@@ -371,6 +384,9 @@ main button {
 @media screen and (max-width: 1000px) and (min-width: 501px) {
   main button {
     width: 50%;
+    justify-content: center;
+    align-self: center;
+    margin: 3%;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -384,6 +400,21 @@ section {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1001px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 section .Search {
   display: flex;
   flex-wrap: wrap;
@@ -394,6 +425,22 @@ section .Search {
   background-color: #00B7C3;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  section .Search {
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #008790);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1001px) {
+  section .Search {
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #008790);
+    text-align: center;
+  }
 }
 section .Search .small-card {
   display: flex;
@@ -417,6 +464,22 @@ section .favorite {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  section .favorite {
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #154d40);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1001px) {
+  section .favorite {
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #154d40);
+    text-align: center;
+  }
+}
 section .favorite .small-card {
   display: flex;
   flex-direction: column;
@@ -438,6 +501,25 @@ section .create {
   background-color: #fbc11a;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  section .create {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #dea604);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1001px) {
+  section .create {
+    width: 33.3%;
+    margin: 3%;
+    filter: drop-shadow(5px 5px 2px #dea604);
+    text-align: center;
+  }
 }
 section .create .small-card {
   display: flex;

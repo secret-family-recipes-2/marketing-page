@@ -8,7 +8,7 @@ main {
     .hero {
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
         background-image: url("/img/asparagus-2169305_640.jpg");
         background-repeat: no-repeat;
         padding: 5%;
@@ -16,7 +16,7 @@ main {
         @media @tablet {
             display: flex;
             background-position: center;
-            align-text: center;
+            margin: 2%;
             
             h2 {
                 color: orange;
@@ -61,12 +61,14 @@ main {
             background-color:rgba(0, 0, 0, 0.5);
             padding: 5%;
             border-radius: 12%;
+            width: 74%;
              
         }
 
         @media @desktop {
             display: flex;
             background-position: left; 
+            margin: 2%;
             
             h2 {
                 color: orange;
@@ -108,6 +110,9 @@ main {
 
         @media @tablet {
             width: 50%;
+            justify-content: center;
+            align-self: center;
+            margin: 3%;
         }
 
         @media @desktop {
@@ -122,6 +127,19 @@ section {
     display: flex;
     flex-direction: column;
 
+    @media @tablet {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media @desktop {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     .Search {
         display: flex;
         flex-wrap: wrap;
@@ -133,6 +151,20 @@ section {
         margin-top: 5px;
         margin-bottom: 5px;
         
+        @media @tablet {
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-blue-hover);
+            text-align: center;
+        }
+
+        @media @desktop {
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-blue-hover);
+            text-align: center;
+
+        }
          
        .small-card {
             display: flex;
@@ -161,6 +193,20 @@ section {
         margin-top: 5px;
         margin-bottom: 5px;
         
+        @media @tablet {
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-green-hover);
+            text-align: center;
+        }
+
+        @media @desktop {
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-green-hover);
+            text-align: center;
+
+        }
          
        .small-card {
             display: flex;
@@ -189,6 +235,23 @@ section {
         margin-top: 5px;
         margin-bottom: 5px;
         
+        @media @tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-lemon);
+            text-align: center;
+        }
+
+        @media @desktop {
+            width: 33.3%;
+            margin: 3%;
+            filter: drop-shadow(5px 5px 2px @dark-lemon);
+            text-align: center;
+
+        }
          
        .small-card {
             display: flex;
