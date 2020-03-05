@@ -200,7 +200,7 @@ nav .main-logo {
 }
 @media screen and (max-width: 1000px) and (min-width: 501px) {
   nav .main-logo {
-    border-bottom: 2px solid #F6F7FB;
+    border-bottom: 2px solid #eae7e0;
   }
 }
 @media screen and (min-width: 1001px) {
@@ -222,7 +222,7 @@ nav a {
   font-size: 2.5em;
   margin: 4px 2px;
   margin: 0 auto;
-  border-bottom: 2px solid #F6F7FB;
+  border-bottom: 2px solid #eae7e0;
 }
 nav a:hover {
   color: #154d40;
@@ -243,12 +243,14 @@ footer {
 }
 footer .foot-nav {
   display: flex;
-  flex-direction: column wrap;
-  align-content: space-between;
+  flex-direction: column nowrap;
   justify-content: space-around;
+  width: 100%;
+  border-top: 2px dashed #eae7e0;
 }
 footer .foot-nav a {
   text-decoration: none;
+  align-content: flex-start;
 }
 footer .foot-nav .foot-logo {
   align-self: center;
@@ -259,13 +261,110 @@ main {
   display: flex;
   flex-direction: column;
 }
-main .hero button {
-  background-color: #cfd68b;
-}
-section {
-  background-color: #F6F7FB;
+main .hero {
   display: flex;
   flex-direction: column;
+  background-image: url("/img/asparagus-2169305_640.jpg");
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+main .hero h2 {
+  color: #eae7e0;
+  align-self: flex-start;
+}
+main .hero h3 {
+  color: #fbc11a;
+  align-self: flex-end;
+}
+main .hero p {
+  color: #eae7e0;
+}
+main .hero .box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  border-radius: 12%;
+}
+main button {
+  background-color: #207561;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+section {
+  background-color: #eae7e0;
+  display: flex;
+  flex-direction: column;
+}
+section .Search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #00B7C3;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section .Search .small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eae7e0;
+  padding: 10%;
+}
+section .Search .small-card h2 {
+  font-weight: bold;
+  color: #008790;
+}
+section .favorite {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #4CAF50;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section .favorite .small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eae7e0;
+  padding: 10%;
+}
+section .favorite .small-card h2 {
+  font-weight: bold;
+  color: #207561;
+}
+section .create {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #fbc11a;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section .create .small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eae7e0;
+  padding: 10%;
+}
+section .create .small-card h2 {
+  font-weight: bold;
+  color: #dea604;
 }
 .about-main {
   display: flex;
@@ -294,8 +393,8 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border-top: 2px solid #204c72;
-  border-bottom: 2px solid #204c72;
+  border-top: 2px solid #4d9699;
+  border-bottom: 2px solid #4d9699;
   padding: 20px;
   background-color: #eae7e0;
 }
