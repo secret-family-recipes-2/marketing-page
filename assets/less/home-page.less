@@ -12,14 +12,42 @@ main {
         background-image: url("/img/asparagus-2169305_640.jpg");
         background-repeat: no-repeat;
         padding: 5%;
+
+        @media @tablet {
+           
+
+            h2 {
+                color: orange;
+                align-self: flex-start;
+                }
+        
+                h3 {
+                    color: @lemon;
+                    align-self: flex-end;
+                }
+        
+                p {
+                    color: @cream;
+                }
+                
+                .box {
+                    background-color:rgba(0, 0, 0, 0.5);
+                    padding: 5%;
+                    border-radius: 12%;
+                     
+                }
+        }
+
         h2 {
         color:@cream;
         align-self: flex-start;
         }
+
         h3 {
             color: @lemon;
             align-self: flex-end;
         }
+
         p {
             color: @cream;
         }
@@ -29,6 +57,10 @@ main {
             padding: 5%;
             border-radius: 12%;
              
+        }
+
+        @media @tablet {
+
         }
 
        
